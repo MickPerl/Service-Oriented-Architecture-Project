@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TinySOA="http:///schemas/TinySOA/_c3UCcLIeEealFoL0yAyV8Q/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/TinySOA/_c3UCcLIeEealFoL0yAyV8Q/1 ../TinyTest/TinySOA.profile.uml#_c3UpgLIeEealFoL0yAyV8Q">
+  <uml:Model xmi:id="_SxDc0F2nEeuMpelyu31lCg" name="Progetto_ACMESky">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_S3lioF2nEeuMpelyu31lCg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XG4YIF2oEeuMpelyu31lCg" name="MySOAEntities">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_OAJ80F2rEeuMpelyu31lCg" name="InvioOfferteIdonee*"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OZTcoF2rEeuMpelyu31lCg" name="CercaMatchGestisciOrdine">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_eVf-IF2sEeuMpelyu31lCg" name="Invio offerte idonee"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_hlehIF2sEeuMpelyu31lCg" client="_OZTcoF2rEeuMpelyu31lCg" supplier="_TtO7wF2oEeuMpelyu31lCg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZKPXAF2oEeuMpelyu31lCg" name="MySOATasks"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cQdhEF2oEeuMpelyu31lCg" name="MySOAUtilities">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_TtO7wF2oEeuMpelyu31lCg" name="Prontogram*">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_9Z1OUF2rEeuMpelyu31lCg" name="RichiestaInoltro"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q0DIIF2oEeuMpelyu31lCg" name="ProntogramManagement*">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_B2iqMF2sEeuMpelyu31lCg" name="NuovoInoltro"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_7UkncF2qEeuMpelyu31lCg" name="«Expose»" client="_TtO7wF2oEeuMpelyu31lCg" supplier="_Q0DIIF2oEeuMpelyu31lCg"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oZxRsF2nEeuMpelyu31lCg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oZ7CsF2nEeuMpelyu31lCg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oZ7CsV2nEeuMpelyu31lCg" key="Version" value="1.0.0"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oZ7Csl2nEeuMpelyu31lCg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oZ7Cs12nEeuMpelyu31lCg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oZ7CtF2nEeuMpelyu31lCg" key="Date" value="2016-11-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oZ7CtV2nEeuMpelyu31lCg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oZ08EF2nEeuMpelyu31lCg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../TinyTest/TinySOA.profile.uml#_c3UpgLIeEealFoL0yAyV8Q"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../TinyTest/TinySOA.profile.uml#_eL5hsLIcEealFoL0yAyV8Q"/>
+    </profileApplication>
+  </uml:Model>
+  <TinySOA:Entities xmi:id="_GI6bIF2oEeuMpelyu31lCg" base_Package="_SxDc0F2nEeuMpelyu31lCg"/>
+  <TinySOA:Tasks xmi:id="_GJPyUF2oEeuMpelyu31lCg" base_Package="_SxDc0F2nEeuMpelyu31lCg"/>
+  <TinySOA:Utilities xmi:id="_GJjUUF2oEeuMpelyu31lCg" base_Package="_SxDc0F2nEeuMpelyu31lCg"/>
+  <TinySOA:ServiceInterface xmi:id="_U9AhkF2oEeuMpelyu31lCg" base_Interface="_TtO7wF2oEeuMpelyu31lCg"/>
+  <TinySOA:Entities xmi:id="_YIb7wF2oEeuMpelyu31lCg" base_Package="_XG4YIF2oEeuMpelyu31lCg"/>
+  <TinySOA:Tasks xmi:id="_aaSCkF2oEeuMpelyu31lCg" base_Package="_ZKPXAF2oEeuMpelyu31lCg"/>
+  <TinySOA:Utilities xmi:id="_dOX60F2oEeuMpelyu31lCg" base_Package="_cQdhEF2oEeuMpelyu31lCg"/>
+  <TinySOA:Capability xmi:id="_2a9NIF2qEeuMpelyu31lCg" base_Class="_Q0DIIF2oEeuMpelyu31lCg"/>
+  <TinySOA:ServiceInterface xmi:id="_OANAIF2rEeuMpelyu31lCg" base_Interface="_OAJ80F2rEeuMpelyu31lCg"/>
+  <TinySOA:Capability xmi:id="_OZXHAF2rEeuMpelyu31lCg" base_Class="_OZTcoF2rEeuMpelyu31lCg"/>
+</xmi:XMI>
