@@ -61,7 +61,7 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Dj81sGMnEeuKdZ2dYceV0w" name="distanzaUtenteAereoporto"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_MdJD8GMnEeuKdZ2dYceV0w" name="distanzaCompTrUtente"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_9UFaIGMmEeuKdZ2dYceV0w" name="GestionePrenotazioneNavetta" visibility="package">
+        <packagedElement xmi:type="uml:Class" xmi:id="_9UFaIGMmEeuKdZ2dYceV0w" name="GestionePrenotazioneNavetta" visibility="public">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_9UFaIWMmEeuKdZ2dYceV0w" name="controlloCodice"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_9UFaImMmEeuKdZ2dYceV0w" name="cercaMatchOfferteInteressi"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_9UFaI2MmEeuKdZ2dYceV0w" name="generaCodici"/>
@@ -72,6 +72,7 @@
         <packagedElement xmi:type="uml:Dependency" xmi:id="_kVaEIGMoEeuKdZ2dYceV0w" client="_9UFaIGMmEeuKdZ2dYceV0w" supplier="_AtWmkGMoEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_d6dIAGMqEeuKdZ2dYceV0w" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_HBNfYGMqEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_r8IR0GWBEeuzveuuuhsydw" client="_9UFaIGMmEeuKdZ2dYceV0w" supplier="_WiZx0GMpEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_elidIGbfEeuQYJeSLMKztw" client="_9UFaIGMmEeuKdZ2dYceV0w" supplier="_3FHHMGbbEeuQYJeSLMKztw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Model" xmi:id="__GIrwGWFEeuzveuuuhsydw" name="ACMESky">
         <packagedElement xmi:type="uml:Package" xmi:id="__GIrwWWFEeuzveuuuhsydw" name="ACMESkyEntities">
@@ -299,7 +300,7 @@
         </packagedElement>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_BubjsGWGEeuzveuuuhsydw" name="CopyOf_FornitoriServiziBancari_7">
+    <packagedElement xmi:type="uml:Model" xmi:id="_BubjsGWGEeuzveuuuhsydw" name="Cliente">
       <packagedElement xmi:type="uml:Package" xmi:id="_BubjsWWGEeuzveuuuhsydw" name="ACMESkyUtilities">
         <packagedElement xmi:type="uml:Interface" xmi:id="_BubjsmWGEeuzveuuuhsydw" name="Prontogram*">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Bubjs2WGEeuzveuuuhsydw" name="RichiestaInoltro"/>
@@ -322,7 +323,7 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_BubjwGWGEeuzveuuuhsydw" name="" client="_BubjumWGEeuzveuuuhsydw" supplier="_BubjvWWGEeuzveuuuhsydw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_GCTzsGWGEeuzveuuuhsydw" name="CopyOf_ACMESkyUtilities_4">
+      <packagedElement xmi:type="uml:Package" xmi:id="_GCTzsGWGEeuzveuuuhsydw" name="ClienteEntities">
         <packagedElement xmi:type="uml:Interface" xmi:id="_GCTzsWWGEeuzveuuuhsydw" name="salvaInteressi">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_GCTzsmWGEeuzveuuuhsydw" name="salvaInteressi" visibility="private"/>
         </packagedElement>
@@ -335,8 +336,11 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_GCTzuGWGEeuzveuuuhsydw" name="" client="_GCTzs2WGEeuzveuuuhsydw" supplier="_GCTztWWGEeuzveuuuhsydw"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_GCTzuWWGEeuzveuuuhsydw" client="_GCTzsWWGEeuzveuuuhsydw" supplier="_GCTztWWGEeuzveuuuhsydw"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_3FHHMGbbEeuQYJeSLMKztw" name="InviaPropostaTrasporto">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_FVh40GbcEeuQYJeSLMKztw" name="ProponiTrasporto"/>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_GcnxIGWGEeuzveuuuhsydw" name="CopyOf_ACMESkyUtilities_5">
+      <packagedElement xmi:type="uml:Package" xmi:id="_GcnxIGWGEeuzveuuuhsydw" name="ClienteTasks">
         <packagedElement xmi:type="uml:Interface" xmi:id="_GcnxIWWGEeuzveuuuhsydw" name="salvaInteressi">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_GcnxImWGEeuzveuuuhsydw" name="salvaInteressi" visibility="private"/>
         </packagedElement>
@@ -349,8 +353,11 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_GcnxKGWGEeuzveuuuhsydw" name="" client="_GcnxI2WGEeuzveuuuhsydw" supplier="_GcnxJWWGEeuzveuuuhsydw"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_GcnxKWWGEeuzveuuuhsydw" client="_GcnxIWWGEeuzveuuuhsydw" supplier="_GcnxJWWGEeuzveuuuhsydw"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_2tLIUGbbEeuQYJeSLMKztw" name="InviaBiglietto" visibility="package">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DHJ8wGbcEeuQYJeSLMKztw" name="InviaBiglietto"/>
+        </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_HbOHYGWGEeuzveuuuhsydw" name="CopyOf_ACMESkyUtilities_7">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HbOHYGWGEeuzveuuuhsydw" name="ClienteUtilities">
         <packagedElement xmi:type="uml:Interface" xmi:id="_HbOHYWWGEeuzveuuuhsydw" name="salvaInteressi">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_HbOHYmWGEeuzveuuuhsydw" name="salvaInteressi" visibility="private"/>
         </packagedElement>
@@ -363,6 +370,52 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_HbOHaGWGEeuzveuuuhsydw" name="" client="_HbOHY2WGEeuzveuuuhsydw" supplier="_HbOHZWWGEeuzveuuuhsydw"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_HbOHaWWGEeuzveuuuhsydw" client="_HbOHYWWGEeuzveuuuhsydw" supplier="_HbOHZWWGEeuzveuuuhsydw"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E_ykQGbaEeuQYJeSLMKztw" name="InviaAck" visibility="public">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykQWbaEeuQYJeSLMKztw" name="invioRichiestaGenerazioneLink"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykQmbaEeuQYJeSLMKztw" name="invioPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykQ2baEeuQYJeSLMKztw" name="controlloCodice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykRGbaEeuQYJeSLMKztw" name="cercaMatchOfferteInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykRWbaEeuQYJeSLMKztw" name="generaCodici"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykRmbaEeuQYJeSLMKztw" name="distanzaUtenteAereoporto"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E_ykR2baEeuQYJeSLMKztw" name="distanzaCompTrUtente"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_OD_dwGbcEeuQYJeSLMKztw" name="InviaAckInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QkwxYGbcEeuQYJeSLMKztw" name="NotificaErroreCodice">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_ryU5cGbdEeuQYJeSLMKztw" annotatedElement="_QkwxYGbcEeuQYJeSLMKztw">
+              <body>Questo codice è sbagliato in quanto la sequenza alfanumerica non corrisponde 
+ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui siano passate
+24 ore e quindi l'offerta sia scaduta, oppure l'aereo sia partito.</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jwBFUGbcEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiCodice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mDSvgGbcEeuQYJeSLMKztw" name="NotificaSuccessoPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_nonukGbcEeuQYJeSLMKztw" name="NotificaFallimentoPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qAjPQGbcEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiPagamento"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_viEFIGbeEeuQYJeSLMKztw" name="InvioDati" visibility="package">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFIWbeEeuQYJeSLMKztw" name="invioRichiestaGenerazioneLink"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFImbeEeuQYJeSLMKztw" name="invioPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFI2beEeuQYJeSLMKztw" name="controlloCodice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFJGbeEeuQYJeSLMKztw" name="cercaMatchOfferteInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFJWbeEeuQYJeSLMKztw" name="generaCodici"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFJmbeEeuQYJeSLMKztw" name="distanzaUtenteAereoporto"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFJ2beEeuQYJeSLMKztw" name="distanzaCompTrUtente"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFKGbeEeuQYJeSLMKztw" name="InviaOfferta"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFKWbeEeuQYJeSLMKztw" name="InviaAckInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFKmbeEeuQYJeSLMKztw" name="NotificaErroreCodice">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_viEFK2beEeuQYJeSLMKztw" annotatedElement="_viEFKmbeEeuQYJeSLMKztw">
+              <body>Questo codice è sbagliato in quanto la sequenza alfanumerica non corrisponde 
+ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui siano passate
+24 ore e quindi l'offerta sia scaduta, oppure l'aereo sia partito.</body>
+            </ownedComment>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFLGbeEeuQYJeSLMKztw" name="InviaLinkBanca"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFLWbeEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiCodice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFLmbeEeuQYJeSLMKztw" name="NotificaSuccessoPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFL2beEeuQYJeSLMKztw" name="NotificaFallimentoPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_viEFMGbeEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_xgeSkGbeEeuQYJeSLMKztw" name="InviaLinkBanca"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_xgeSlmbeEeuQYJeSLMKztw" name="InviaCodice"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8xb-4GV9Eeuzveuuuhsydw">
@@ -397,7 +450,6 @@
   <TinySOA:Capability xmi:id="_b-uQkGMpEeuKdZ2dYceV0w" base_Class="_a-aqIGMpEeuKdZ2dYceV0w"/>
   <TinySOA:Capability xmi:id="_LkYIkGMqEeuKdZ2dYceV0w" base_Class="_KsmMAGMqEeuKdZ2dYceV0w"/>
   <TinySOA:Entities xmi:id="_WcjzEGMqEeuKdZ2dYceV0w" base_Package="_O-WVEGMqEeuKdZ2dYceV0w"/>
-  <TinySOA:Capability xmi:id="_TFgiQGMrEeuKdZ2dYceV0w" base_Class="_R89l0GMrEeuKdZ2dYceV0w"/>
   <TinySOA:Capability xmi:id="_46rXoGMrEeuKdZ2dYceV0w" base_Class="_3w2o0GMrEeuKdZ2dYceV0w"/>
   <TinySOA:Capability xmi:id="__zxugGV9Eeuzveuuuhsydw" base_Class="_a-aqIGMpEeuKdZ2dYceV0w"/>
   <TinySOA:Capability xmi:id="_EIwKsGV-Eeuzveuuuhsydw" base_Class="_KsmMAGMqEeuKdZ2dYceV0w"/>
@@ -426,4 +478,7 @@
   <TinySOA:Tasks xmi:id="_BudY5GWGEeuzveuuuhsydw" base_Package="_BubjuWWGEeuzveuuuhsydw"/>
   <TinySOA:Expose xmi:id="_Bud_8GWGEeuzveuuuhsydw" base_Dependency="_BubjwGWGEeuzveuuuhsydw"/>
   <TinySOA:Capability xmi:id="_Bud_8WWGEeuzveuuuhsydw" base_Class="_BubjvWWGEeuzveuuuhsydw"/>
+  <TinySOA:Entities xmi:id="_EUAuQGbYEeuQYJeSLMKztw" base_Package="_GCTzsGWGEeuzveuuuhsydw"/>
+  <TinySOA:Tasks xmi:id="_FHKpgGbYEeuQYJeSLMKztw" base_Package="_GcnxIGWGEeuzveuuuhsydw"/>
+  <TinySOA:Utilities xmi:id="_G6Rl4GbYEeuQYJeSLMKztw" base_Package="_HbOHYGWGEeuzveuuuhsydw"/>
 </xmi:XMI>
