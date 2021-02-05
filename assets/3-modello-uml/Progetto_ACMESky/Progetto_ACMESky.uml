@@ -45,11 +45,17 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_QYAMc2MmEeuKdZ2dYceV0w" name="controlloCodice"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_eyI6wGMmEeuKdZ2dYceV0w" name="cercaMatchOfferteInteressi"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_q0xmMGMmEeuKdZ2dYceV0w" name="generaCodici"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_AYZeUGfKEeuh7pG9Rv0v-w" name="inviaOfferte"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_XFD6UGMmEeuKdZ2dYceV0w" name="GestioneCorrispondenzaOfferteInteressi">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Ok-RwGfKEeuh7pG9Rv0v-w" annotatedElement="_XFD6UGMmEeuKdZ2dYceV0w">
+            <body>riceviOfferte è l'operazione che viene invocata tanto per l'invio delle offerte&#xD;
+normali, che per quelle LM</body>
+          </ownedComment>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_XFD6UWMmEeuKdZ2dYceV0w" name="controlloCodice"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_itfWAGMmEeuKdZ2dYceV0w" name="cercaMatchOfferteInteressi"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_sHtNsGMmEeuKdZ2dYceV0w" name="generaCodici"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_9US0IGfJEeuh7pG9Rv0v-w" name="riceviOfferte"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_tmXkEGMmEeuKdZ2dYceV0w" name="" client="_QYAMcGMmEeuKdZ2dYceV0w" supplier="_XFD6UGMmEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Interface" xmi:id="_3NFmsGMmEeuKdZ2dYceV0w" name="GestionePrenotazioneNavetta">
@@ -70,6 +76,9 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Pt3N0GMnEeuKdZ2dYceV0w" name="distanzaCompTrUtente"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_HQYrMGMnEeuKdZ2dYceV0w" name="distanzaUtenteAereoporto"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_c4TfYGfIEeuh7pG9Rv0v-w" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_hYcpwGfIEeuh7pG9Rv0v-w" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_yutgEGfKEeuh7pG9Rv0v-w" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_TgSxsGfJEeuh7pG9Rv0v-w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Model" xmi:id="__GIrwGWFEeuzveuuuhsydw" name="ACMESky">
         <packagedElement xmi:type="uml:Package" xmi:id="__GIrwWWFEeuzveuuuhsydw" name="ACMESkyEntities">
@@ -164,6 +173,8 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3BlMMGMkEeuKdZ2dYceV0w" name="riceviPagamento"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_uhv5IGMkEeuKdZ2dYceV0w" name="" client="_LabxIGMkEeuKdZ2dYceV0w" supplier="_XMtFUGMkEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_cI-JoGfHEeuh7pG9Rv0v-w" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_knWEIGfHEeuh7pG9Rv0v-w" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_Sm0_AGMnEeuKdZ2dYceV0w" name="ApiMaps">
@@ -293,6 +304,7 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_HBNfYGMqEeuKdZ2dYceV0w" name="InoltroCodice">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Iq0hgGMqEeuKdZ2dYceV0w" name="inoltroCodice"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_wodsoGfHEeuh7pG9Rv0v-w" client="_KsmMAGMqEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_BubjsGWGEeuzveuuuhsydw" name="Cliente">
@@ -371,7 +383,6 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_LUp68GbiEeuChd7P_30mdA" name="InviaAck">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_OD_dwGbcEeuQYJeSLMKztw" name="InviaAckInteressi"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_qAjPQGbcEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_QkwxYGbcEeuQYJeSLMKztw" name="NotificaErroreCodice">
             <ownedComment xmi:type="uml:Comment" xmi:id="_ryU5cGbdEeuQYJeSLMKztw" annotatedElement="_QkwxYGbcEeuQYJeSLMKztw">
               <body>Questo codice è sbagliato in quanto la sequenza alfanumerica non corrisponde 
@@ -380,9 +391,32 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_jwBFUGbcEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiCodice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qAjPQGbcEeuQYJeSLMKztw" name="NotificaEsaurimentoTentativiPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_mDSvgGbcEeuQYJeSLMKztw" name="NotificaSuccessoPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_nonukGbcEeuQYJeSLMKztw" name="NotificaFallimentoPagamento"/>
         </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_rTWzsGfIEeuh7pG9Rv0v-w" name="CompAerea">
+      <packagedElement xmi:type="uml:Package" xmi:id="_O4cc0GfJEeuh7pG9Rv0v-w" name="CompAereaTasks">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TgSxsGfJEeuh7pG9Rv0v-w" name="richiediOfferte">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_d_9OgGfJEeuh7pG9Rv0v-w" name="richiestaOfferte"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_aIxhkGfJEeuh7pG9Rv0v-w" name="RestituzioneOfferte">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hw4icGfJEeuh7pG9Rv0v-w" name="invioOfferte"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_UFcQsGfKEeuh7pG9Rv0v-w" client="_TgSxsGfJEeuh7pG9Rv0v-w" supplier="_aIxhkGfJEeuh7pG9Rv0v-w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_3iAP8GfKEeuh7pG9Rv0v-w" client="_aIxhkGfJEeuh7pG9Rv0v-w" supplier="_QYAMcGMmEeuKdZ2dYceV0w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JxQOoGfLEeuh7pG9Rv0v-w" name="CompAereaUtilities">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_YKLcAGfLEeuh7pG9Rv0v-w" name="inviaPagamento">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_cGsU4GfLEeuh7pG9Rv0v-w" name="inviaPagamento"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fhlucGfLEeuh7pG9Rv0v-w" name="RicezionePagamento">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_nK96oGfLEeuh7pG9Rv0v-w" name="riceviPagamento"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_vYJXcGfLEeuh7pG9Rv0v-w" client="_YKLcAGfLEeuh7pG9Rv0v-w" supplier="_fhlucGfLEeuh7pG9Rv0v-w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_3b4kYGfLEeuh7pG9Rv0v-w" client="_fhlucGfLEeuh7pG9Rv0v-w" supplier="_-9zTAGbhEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8xb-4GV9Eeuzveuuuhsydw">
@@ -448,4 +482,10 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:Tasks xmi:id="_FHKpgGbYEeuQYJeSLMKztw" base_Package="_GcnxIGWGEeuzveuuuhsydw"/>
   <TinySOA:Utilities xmi:id="_G6Rl4GbYEeuQYJeSLMKztw" base_Package="_HbOHYGWGEeuzveuuuhsydw"/>
   <TinySOA:Capability xmi:id="_xHGMcGbiEeuChd7P_30mdA" base_Class="_svONQGbiEeuChd7P_30mdA"/>
+  <TinySOA:Tasks xmi:id="_QB70cGfJEeuh7pG9Rv0v-w" base_Package="_O4cc0GfJEeuh7pG9Rv0v-w"/>
+  <TinySOA:Capability xmi:id="_bQO44GfJEeuh7pG9Rv0v-w" base_Class="_aIxhkGfJEeuh7pG9Rv0v-w"/>
+  <TinySOA:Expose xmi:id="_VzBz4GfKEeuh7pG9Rv0v-w" base_Dependency="_UFcQsGfKEeuh7pG9Rv0v-w"/>
+  <TinySOA:Utilities xmi:id="_KqarQGfLEeuh7pG9Rv0v-w" base_Package="_JxQOoGfLEeuh7pG9Rv0v-w"/>
+  <TinySOA:Capability xmi:id="_gZjRMGfLEeuh7pG9Rv0v-w" base_Class="_fhlucGfLEeuh7pG9Rv0v-w"/>
+  <TinySOA:Expose xmi:id="_yEAgwGfLEeuh7pG9Rv0v-w" base_Dependency="_vYJXcGfLEeuh7pG9Rv0v-w"/>
 </xmi:XMI>
