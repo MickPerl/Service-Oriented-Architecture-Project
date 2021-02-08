@@ -62,13 +62,15 @@ normali, che per quelle LM</body>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_9US0IGfJEeuh7pG9Rv0v-w" name="riceviOfferte"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_tmXkEGMmEeuKdZ2dYceV0w" name="" client="_QYAMcGMmEeuKdZ2dYceV0w" supplier="_XFD6UGMmEeuKdZ2dYceV0w"/>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_3NFmsGMmEeuKdZ2dYceV0w" name="inviaDistanza">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_3NFmsGMmEeuKdZ2dYceV0w" name="GestionePrenotazioneNavetta">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3NFmsWMmEeuKdZ2dYceV0w" name="invioRichiestaGenerazioneLink"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3NFmsmMmEeuKdZ2dYceV0w" name="invioPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3NFms2MmEeuKdZ2dYceV0w" name="controlloCodice"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3NFmtGMmEeuKdZ2dYceV0w" name="cercaMatchOfferteInteressi"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3NFmtWMmEeuKdZ2dYceV0w" name="generaCodici"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_-BDdYGfSEeuh7pG9Rv0v-w" name="inviaDistanza"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_pxHsQGo2EeukJL7Giwge6Q" name="inviaRifiutoTrasporto"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tHo8IGo2EeukJL7Giwge6Q" name="inviaAccettazioneTrasporto"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_Iv-1sGMnEeuKdZ2dYceV0w" name="" client="_AtWmkGMoEeuKdZ2dYceV0w" supplier="_5XyHMGMnEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_kVaEIGMoEeuKdZ2dYceV0w" client="_svONQGbiEeuChd7P_30mdA" supplier="_AtWmkGMoEeuKdZ2dYceV0w"/>
@@ -76,6 +78,8 @@ normali, che per quelle LM</body>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_elidIGbfEeuQYJeSLMKztw" client="_svONQGbiEeuChd7P_30mdA" supplier="_3FHHMGbbEeuQYJeSLMKztw"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_svONQGbiEeuChd7P_30mdA" name="GestionePrenotazioneNavetta">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_8WRWkGfSEeuh7pG9Rv0v-w" name="ricezioneDistanza"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_4VJ9cGo2EeukJL7Giwge6Q" name="inviaAccettazioneTrasporto"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_4VLLkGo2EeukJL7Giwge6Q" name="inviaRifiutoTrasporto"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_c4TfYGfIEeuh7pG9Rv0v-w" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_hYcpwGfIEeuh7pG9Rv0v-w" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
@@ -115,7 +119,7 @@ normali, che per quelle LM</body>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3BlMMGMkEeuKdZ2dYceV0w" name="riceviPagamento"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_uhv5IGMkEeuKdZ2dYceV0w" name="" client="_LabxIGMkEeuKdZ2dYceV0w" supplier="_XMtFUGMkEeuKdZ2dYceV0w"/>
-        <packagedElement xmi:type="uml:Dependency" xmi:id="_cI-JoGfHEeuh7pG9Rv0v-w" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_cI-JoGfHEeuh7pG9Rv0v-w" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_knWEIGfHEeuh7pG9Rv0v-w" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
@@ -192,13 +196,9 @@ normali, che per quelle LM</body>
       <packagedElement xmi:type="uml:Package" xmi:id="_POZ_wGMpEeuKdZ2dYceV0w" name="CompTrTasks">
         <packagedElement xmi:type="uml:Interface" xmi:id="_WiZx0GMpEeuKdZ2dYceV0w" name="Prenotazione">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_ZMR-IGMpEeuKdZ2dYceV0w" name="prenota"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_Wd_tYGfTEeuh7pG9Rv0v-w" name="inviaAccettazioneTrasporto"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_vf1kwGfUEeuh7pG9Rv0v-w" name="inviaRifiutoTrasporto"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_a-aqIGMpEeuKdZ2dYceV0w" name="Prenotazione">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_c9ov4GMpEeuKdZ2dYceV0w" name="prenota"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_zypdwGfUEeuh7pG9Rv0v-w" name="riceviRifiutoTrasporto"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_zyr6AGfUEeuh7pG9Rv0v-w" name="riceviAccettazioneTrasporto"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -384,7 +384,6 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:Utilities xmi:id="_GJjUUF2oEeuMpelyu31lCg" base_Package="_SxDc0F2nEeuMpelyu31lCg"/>
   <TinySOA:ServiceInterface xmi:id="_2uTVw2MiEeuKdZ2dYceV0w" base_Interface="_2uRgkWMiEeuKdZ2dYceV0w"/>
   <TinySOA:Capability xmi:id="_2uVK8GMiEeuKdZ2dYceV0w" base_Class="_2uRgk2MiEeuKdZ2dYceV0w"/>
-  <TinySOA:Entities xmi:id="_FnfXkGMjEeuKdZ2dYceV0w" base_Package="_CB2GkGMjEeuKdZ2dYceV0w"/>
   <TinySOA:Tasks xmi:id="_NKoY4GMjEeuKdZ2dYceV0w" base_Package="_KxpvUGMjEeuKdZ2dYceV0w"/>
   <TinySOA:Tasks xmi:id="_kE4uIGMjEeuKdZ2dYceV0w" base_Package="_ihaJMGMjEeuKdZ2dYceV0w"/>
   <TinySOA:Capability xmi:id="_YE1AIGMkEeuKdZ2dYceV0w" base_Class="_XMtFUGMkEeuKdZ2dYceV0w"/>
