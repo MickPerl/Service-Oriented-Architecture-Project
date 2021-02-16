@@ -85,6 +85,15 @@ normali, che per quelle LM</body>
           <ownedOperation xmi:type="uml:Operation" xmi:id="__JJgIGo-EeukJL7Giwge6Q" name="segnaOffertaAcquistata"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_IO_DQGo_EeukJL7Giwge6Q" client="_4p5kwGo-EeukJL7Giwge6Q" supplier="_XFD6UGMmEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_XZfHIHCYEeuLpvsj5GKIdQ" client="_svONQGbiEeuChd7P_30mdA" supplier="_AtWmkGMoEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_dJ3KUHCYEeuLpvsj5GKIdQ" client="_svONQGbiEeuChd7P_30mdA" supplier="_WiZx0GMpEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Fm-5YHCZEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_HBNfYGMqEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_PpoqEHCZEeuLpvsj5GKIdQ" client="__JyM8GMlEeuKdZ2dYceV0w _W4FIsGfQEeuh7pG9Rv0v-w _rFZ4oGMlEeuKdZ2dYceV0w" supplier="_LabxIGMkEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_l1FtsHCbEeuLpvsj5GKIdQ" client="_svONQGbiEeuChd7P_30mdA" supplier="_3FHHMGbbEeuQYJeSLMKztw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_joonwHCcEeuLpvsj5GKIdQ" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_fgyzMHCdEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_O4cc0GfJEeuh7pG9Rv0v-w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_0scRkHCdEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_0FxeMGMrEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_R_SgkHCeEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_XDDV4GMrEeuKdZ2dYceV0w"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_YpaJUGMjEeuKdZ2dYceV0w" name="FornitoriServiziBancari">
@@ -109,6 +118,17 @@ normali, che per quelle LM</body>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_3BlMMGMkEeuKdZ2dYceV0w" name="riceviPagamento"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_uhv5IGMkEeuKdZ2dYceV0w" name="" client="_LabxIGMkEeuKdZ2dYceV0w" supplier="_XMtFUGMkEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_jkNiIHCZEeuLpvsj5GKIdQ" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_YKLcAGfLEeuh7pG9Rv0v-w"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_RU-8IHCaEeuLpvsj5GKIdQ" name="ServiziBancariInterno">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_medQQHCaEeuLpvsj5GKIdQ" name="verificaDati"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z6bH8HCaEeuLpvsj5GKIdQ" name="VerificaDatiPagamento">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_45wt8HCaEeuLpvsj5GKIdQ" name="verificaDati"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_gqGE8HCaEeuLpvsj5GKIdQ" client="_RU-8IHCaEeuLpvsj5GKIdQ" supplier="_Z6bH8HCaEeuLpvsj5GKIdQ">
+          <name xsi:nil="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_3SOIYHCaEeuLpvsj5GKIdQ" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_RU-8IHCaEeuLpvsj5GKIdQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_Sm0_AGMnEeuKdZ2dYceV0w" name="ApiMaps">
@@ -344,10 +364,11 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
         <packagedElement xmi:type="uml:Interface" xmi:id="_YKLcAGfLEeuh7pG9Rv0v-w" name="inviaPagamento">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_cGsU4GfLEeuh7pG9Rv0v-w" name="inviaPagamento"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_fhlucGfLEeuh7pG9Rv0v-w" name="RicezionePagamento">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fhlucGfLEeuh7pG9Rv0v-w" name="RicezionePagamentoInvioBiglietto">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_nK96oGfLEeuh7pG9Rv0v-w" name="riceviPagamento"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_vYJXcGfLEeuh7pG9Rv0v-w" client="_YKLcAGfLEeuh7pG9Rv0v-w" supplier="_fhlucGfLEeuh7pG9Rv0v-w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_JhJhgHCcEeuLpvsj5GKIdQ" client="_fhlucGfLEeuh7pG9Rv0v-w" supplier="_-9zTAGbhEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8xb-4GV9Eeuzveuuuhsydw">
@@ -434,4 +455,7 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:ServiceInterface xmi:id="_7UD9kGfQEeuh7pG9Rv0v-w" base_Interface="_3Uz5wGfQEeuh7pG9Rv0v-w"/>
   <TinySOA:Expose xmi:id="_ENYusGfREeuh7pG9Rv0v-w" base_Dependency="_9BVXsGfQEeuh7pG9Rv0v-w"/>
   <TinySOA:Expose xmi:id="_JxBdwGo_EeukJL7Giwge6Q" base_Dependency="_IO_DQGo_EeukJL7Giwge6Q"/>
+  <TinySOA:ServiceInterface xmi:id="_YR9VUHCaEeuLpvsj5GKIdQ" base_Interface="_RU-8IHCaEeuLpvsj5GKIdQ"/>
+  <TinySOA:Capability xmi:id="_axZzQHCaEeuLpvsj5GKIdQ" base_Class="_Z6bH8HCaEeuLpvsj5GKIdQ"/>
+  <TinySOA:Expose xmi:id="_kDPLAHCaEeuLpvsj5GKIdQ" base_Dependency="_gqGE8HCaEeuLpvsj5GKIdQ"/>
 </xmi:XMI>
