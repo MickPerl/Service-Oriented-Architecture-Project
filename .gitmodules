@@ -1,0 +1,3 @@
+[submodule "soseng-project-documentation"]
+	path = soseng-project-documentation
+	url = git@github.com:MickPerl/soseng-project-documentation.git
