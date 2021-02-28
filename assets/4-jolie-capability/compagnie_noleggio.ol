@@ -5,7 +5,7 @@ include "console.iol"
 
 inputPort NoleggioPort {
     Location: "socket://0.0.0.0:8000"
-    Protocol: http {
+    Protocol: soap {
         .wsdl = "./prenotazione_trasporto.wsdl";
         .wsdl.port = "NoleggioPortServicePort";
         .dropRootValue = true
@@ -16,10 +16,10 @@ inputPort NoleggioPort {
 
 main {
 
-    [richiesta(numbers)] {
+    [richiesta(dati_richiesta)] {
 		
-		
-		println@Console("Ho calcolato una somma")()
-	}
+		println@Console("Richiesta prenotazione compagnia di noleggio effettuata")()
+	
+    }
 
 }
