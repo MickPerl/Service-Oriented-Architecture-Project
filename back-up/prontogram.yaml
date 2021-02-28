@@ -1,0 +1,218 @@
+openapi: 3.0.0
+info:
+  title: prontogram
+  version: '1.0'
+servers:
+  - url: 'https://soseng-unibo.stoplight.io/mocks/soseng-unibo/soseng-project-documentation/6636887'
+    description: testing
+paths:
+  /message:
+    parameters: []
+    post:
+      summary: get message
+      operationId: post-message
+      responses:
+        '401':
+          description: Unauthorized
+          headers: {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+        '404':
+          description: Not Found
+        '406':
+          description: Not Acceptable
+        '415':
+          description: Unsupported Media Type
+          content:
+            application/vnd.api+json:
+              schema:
+                type: object
+                properties:
+                  links:
+                    type: object
+                    properties:
+                      self:
+                        type: string
+                      next:
+                        type: string
+                      previous:
+                        type: string
+                  data:
+                    type: object
+                    properties:
+                      body:
+                        type: string
+                        nullable: true
+                  meta:
+                    type: object
+                    properties:
+                      date:
+                        type: string
+                      sender:
+                        type: string
+                      receiver:
+                        type: string
+                      messageId:
+                        type: integer
+              examples:
+                /message?messageId=100:
+                  value:
+                    messageId:
+                      - 100
+                    sender: acmesky
+                    body: 'C''è una nuova offerta, codice offerta: 1234'
+                    receiver: Mario Rossi
+                    date: '20/02/2021, 10:04 CET'
+                /message:
+                  value:
+                    messageId:
+                      - 100
+                      - 101
+                      - 102
+                      - 103
+                    sender: null
+                    body: null
+                    receiver: Mario Rossi
+                    date: null
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: messageId
+          description: Id del messaggio da leggere
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  description: token di autenticazione
+              required:
+                - token
+          application/xml:
+            schema:
+              type: object
+              properties: {}
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                '':
+                  type: string
+          text/html:
+            schema:
+              type: object
+              properties: {}
+          text/plain:
+            schema:
+              type: object
+              properties: {}
+          application/EDI-X12:
+            schema:
+              type: object
+              properties: {}
+        description: È richiesto un token che viene fornito dopo un processo di autenticazione
+      description: Leggi tutti gli id dei messaggi oppure solo un messaggio (fornendo un messageId)
+  /allmessage:
+    post:
+      summary: Restituisci tutti i messaggi
+      tags: []
+      requestBody:
+        content:
+          application/vnd.api+json:
+            schema:
+              description: ''
+              type: object
+              properties:
+                links:
+                  type: object
+                  properties:
+                    self:
+                      type: string
+                      description: link al blocco corrente
+                    next:
+                      type: string
+                      description: link al blocco successivo
+                    prev:
+                      type: string
+                data:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      message:
+                        type: object
+                        properties:
+                          body:
+                            type: string
+                          sender:
+                            type: string
+                          receiver:
+                            type: string
+                          data:
+                            type: string
+                      links:
+                        type: object
+                        properties:
+                          self:
+                            type: string
+                            description: Link al messaggio
+                          next:
+                            type: string
+                            description: link a messaggio successivo in senso temporale
+                          prev:
+                            type: string
+          application/xml:
+            schema:
+              type: object
+              properties: {}
+      operationId: post-allmessage
+      description: ''
+      security:
+        - tokenSessione: []
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+  /createmessage:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                description: ''
+                type: object
+                properties:
+                  token:
+                    type: string
+                    minLength: 1
+                  expiration-date:
+                    type: string
+                    minLength: 1
+                required:
+                  - token
+                  - expiration-date
+            application/xml:
+              schema:
+                type: object
+                properties: {}
+      operationId: get-createmessage
+      security:
+        - tokenSessione: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+
