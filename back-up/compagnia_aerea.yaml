@@ -38,7 +38,7 @@ paths:
                           type: object
                           properties:
                             amount:
-                              type: integer
+                              type: number
                             currency:
                               type: string
                         id:
@@ -187,4 +187,3 @@ components:
       name: abcd1234!@
       type: apiKey
       in: header
-
