@@ -1,3 +1,6 @@
 [submodule "soseng-project-documentation"]
 	path = soseng-project-documentation
 	url = git@github.com:MickPerl/soseng-project-documentation.git
+[submodule "soseng-project-travel-company"]
+	path = soseng-project-travel-company
+	url = git@github.com:MickPerl/soseng-project-travel-company.git
