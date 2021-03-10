@@ -4,3 +4,15 @@
 [submodule "soseng-project-travel-company"]
 	path = soseng-project-travel-company
 	url = git@github.com:MickPerl/soseng-project-travel-company.git
+[submodule "soseng-project-airline"]
+	path = soseng-project-airline
+	url = git@github.com:MickPerl/soseng-project-airline.git
+[submodule "soseng-project-payment-provider"]
+	path = soseng-project-payment-provider
+	url = git@github.com:MickPerl/soseng-project-payment-provider.git
+[submodule "soseng-project-prontogram"]
+	path = soseng-project-prontogram
+	url = git@github.com:MickPerl/soseng-project-prontogram.git
+[submodule "soseng-project-geographical-distances-provider"]
+	path = soseng-project-geographical-distances-provider
+	url = git@github.com:MickPerl/soseng-project-geographical-distances-provider.git
