@@ -12,12 +12,18 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_0FxeMGMrEeuKdZ2dYceV0w" name="invioInteressi">
           <ownedOperation xmi:type="uml:Operation" xmi:id="__YER0GMrEeuKdZ2dYceV0w" name="invioInteressi"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_3w2o0GMrEeuKdZ2dYceV0w" name="MemorizzaInteressi">
+        <packagedElement xmi:type="uml:Class" xmi:id="_3w2o0GMrEeuKdZ2dYceV0w" name="RegistraInteressi">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_CNK2sGMsEeuKdZ2dYceV0w" name="ricezioneInteressi"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_NEfH4GWEEeuzveuuuhsydw" name="salvaInteressi"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_LsaYUGMsEeuKdZ2dYceV0w" name="" client="_0FxeMGMrEeuKdZ2dYceV0w" supplier="_3w2o0GMrEeuKdZ2dYceV0w"/>
-        <packagedElement xmi:type="uml:Dependency" xmi:id="_QUTS0GWEEeuzveuuuhsydw" client="_XDDV4GMrEeuKdZ2dYceV0w" supplier="_3w2o0GMrEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_QUTS0GWEEeuzveuuuhsydw" client="_XDDV4GMrEeuKdZ2dYceV0w" supplier="_b30RkIKJEeufPJLro6VmHA"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_b30RkIKJEeufPJLro6VmHA" name="MemorizzaInteressi">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_b30RkYKJEeufPJLro6VmHA" name="ricezioneInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_b30RkoKJEeufPJLro6VmHA" name="salvaInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NEfH4GWEEeuzveuuuhsydw" name="salvaInteressi"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_oBbuwIKJEeufPJLro6VmHA" client="_3w2o0GMrEeuKdZ2dYceV0w" supplier="_XDDV4GMrEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_u0hMIIKJEeufPJLro6VmHA" client="_3w2o0GMrEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_KxpvUGMjEeuKdZ2dYceV0w" name="ACMESkyTasks">
         <packagedElement xmi:type="uml:Class" xmi:id="_rFZ4oGMlEeuKdZ2dYceV0w" name="ControlloCodiceEPagamento">
@@ -94,6 +100,7 @@ normali, che per quelle LM</body>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_fgyzMHCdEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_TgSxsGfJEeuh7pG9Rv0v-w"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_0scRkHCdEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_0FxeMGMrEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_R_SgkHCeEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_XDDV4GMrEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ZVJrEIKKEeufPJLro6VmHA" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_YpaJUGMjEeuKdZ2dYceV0w" name="FornitoreServiziBancari">
@@ -129,6 +136,8 @@ normali, che per quelle LM</body>
           <name xsi:nil="true"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_3SOIYHCaEeuLpvsj5GKIdQ" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_RU-8IHCaEeuLpvsj5GKIdQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_vU2ckIKKEeufPJLro6VmHA" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_1FJnQIKKEeufPJLro6VmHA" client="_Z6bH8HCaEeuLpvsj5GKIdQ" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_Sm0_AGMnEeuKdZ2dYceV0w" name="FornitoreDistanze">
@@ -509,4 +518,5 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:ServiceInterface xmi:id="_yNtQIIJ2EeudM41gBU4zhQ" base_Interface="_yNLr0IJ2EeudM41gBU4zhQ"/>
   <TinySOA:Capability xmi:id="_yN75oIJ2EeudM41gBU4zhQ" base_Class="_yNLrzoJ2EeudM41gBU4zhQ"/>
   <TinySOA:Entities xmi:id="_yN8gsIJ2EeudM41gBU4zhQ" base_Package="_yNLrzYJ2EeudM41gBU4zhQ"/>
+  <TinySOA:Capability xmi:id="_fr61UIKJEeufPJLro6VmHA" base_Class="_b30RkIKJEeufPJLro6VmHA"/>
 </xmi:XMI>
