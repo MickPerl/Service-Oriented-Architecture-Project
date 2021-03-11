@@ -267,6 +267,7 @@ normali, che per quelle LM</body>
         <packagedElement xmi:type="uml:Interface" xmi:id="_HBNfYGMqEeuKdZ2dYceV0w" name="InoltroCodice">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_Iq0hgGMqEeuKdZ2dYceV0w" name="inoltroCodice"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_-bpVMIKNEeuQDaWWLX_U7g" client="_KsmMAGMqEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_BubjsGWGEeuzveuuuhsydw" name="Cliente">
