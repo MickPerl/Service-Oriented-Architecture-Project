@@ -228,8 +228,8 @@
       <bpmn:lane id="Lane_1s48i2p" name="Dip. salvataggio offerte">
         <bpmn:flowNodeRef>Event_0wa6zth</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_0ky0n6c</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Activity_1mo9bbu</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_06ktr8z</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1mo9bbu</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1cg8cgv" name="Dip. prenota voli">
         <bpmn:flowNodeRef>Activity_0uwwb7c</bpmn:flowNodeRef>
@@ -283,12 +283,13 @@
       </bpmn:intermediateCatchEvent>
       <bpmn:sequenceFlow id="Flow_18bm9r3" sourceRef="Gateway_0a5cujk" targetRef="Event_1v97e8r" />
       <bpmn:sequenceFlow id="Flow_0ytbn7j" sourceRef="Event_1v97e8r" targetRef="Activity_0mw5dyc" />
-      <bpmn:serviceTask id="Activity_0mw5dyc" name="Salva offerte">
+      <bpmn:serviceTask id="Activity_0mw5dyc" name="Salva offerta">
         <bpmn:incoming>Flow_0ytbn7j</bpmn:incoming>
         <bpmn:outgoing>Flow_1jdbnnj</bpmn:outgoing>
         <bpmn:dataOutputAssociation id="DataOutputAssociation_007fn2f">
           <bpmn:targetRef>DataStoreReference_1pgijno</bpmn:targetRef>
         </bpmn:dataOutputAssociation>
+        <bpmn:multiInstanceLoopCharacteristics />
       </bpmn:serviceTask>
     </bpmn:subProcess>
     <bpmn:sequenceFlow id="Flow_0u9uaeu" sourceRef="Event_1i1f3nk" targetRef="Activity_1hch7rb" />
@@ -300,11 +301,6 @@
       <bpmn:messageEventDefinition id="MessageEventDefinition_09l6qia" />
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="Flow_1q7uib8" sourceRef="Event_0ky0n6c" targetRef="Activity_1mo9bbu" />
-    <bpmn:task id="Activity_1mo9bbu" name="Salva offerta LM">
-      <bpmn:incoming>Flow_1q7uib8</bpmn:incoming>
-      <bpmn:outgoing>Flow_1s6c3gu</bpmn:outgoing>
-      <bpmn:multiInstanceLoopCharacteristics />
-    </bpmn:task>
     <bpmn:serviceTask id="Activity_1hch7rb" name="Salva interessi">
       <bpmn:incoming>Flow_0u9uaeu</bpmn:incoming>
       <bpmn:outgoing>Flow_1wwfiro</bpmn:outgoing>
@@ -533,6 +529,11 @@
     <bpmn:sequenceFlow id="Flow_0fk18yj" sourceRef="Activity_06ktr8z" targetRef="Activity_0uwwb7c" />
     <bpmn:sequenceFlow id="Flow_0l30u32" sourceRef="Activity_1hch7rb" targetRef="Activity_0uwwb7c" />
     <bpmn:dataStoreReference id="DataStoreReference_1pgijno" name="DBMS Offerte" />
+    <bpmn:serviceTask id="Activity_1mo9bbu" name="Salva offerta LM">
+      <bpmn:incoming>Flow_1q7uib8</bpmn:incoming>
+      <bpmn:outgoing>Flow_1s6c3gu</bpmn:outgoing>
+      <bpmn:multiInstanceLoopCharacteristics />
+    </bpmn:serviceTask>
     <bpmn:textAnnotation id="TextAnnotation_07mzuk1">
       <bpmn:text>intendiamo una o più offerte LM attivate dalla stessa compagnia aerea</bpmn:text>
     </bpmn:textAnnotation>
@@ -983,14 +984,11 @@
           <dc:Bounds x="258" y="2370" width="32" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataStoreReference_1pgijno_di" bpmnElement="DataStoreReference_1pgijno">
-        <dc:Bounds x="1415" y="2135" width="50" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1406" y="2192" width="69" height="14" />
-        </bpmndi:BPMNLabel>
+      <bpmndi:BPMNShape id="Activity_03dea4v_di" bpmnElement="Activity_1mo9bbu">
+        <dc:Bounds x="1120" y="2380" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0pvekba_di" bpmnElement="Activity_06ktr8z" isExpanded="true">
-        <dc:Bounds x="335" y="2257" width="570" height="363" />
+        <dc:Bounds x="335" y="2257" width="570" height="273" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0ytbn7j_di" bpmnElement="Flow_0ytbn7j">
         <di:waypoint x="663" y="2470" />
@@ -1046,9 +1044,6 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="978" y="2365" width="83" height="27" />
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1mo9bbu_di" bpmnElement="Activity_1mo9bbu">
-        <dc:Bounds x="1120" y="2380" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1gx2crr_di" bpmnElement="Activity_1hch7rb">
         <dc:Bounds x="465" y="1287" width="100" height="80" />
@@ -1392,6 +1387,12 @@
       <bpmndi:BPMNShape id="TextAnnotation_048mzkm_di" bpmnElement="TextAnnotation_048mzkm">
         <dc:Bounds x="3470" y="1501" width="140" height="129" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataStoreReference_1pgijno_di" bpmnElement="DataStoreReference_1pgijno">
+        <dc:Bounds x="1415" y="2135" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1406" y="2192" width="69" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_07mzuk1_di" bpmnElement="TextAnnotation_07mzuk1">
         <dc:Bounds x="1050" y="2490" width="99.99274099883856" height="95.23809523809524" />
       </bpmndi:BPMNShape>
@@ -1546,6 +1547,11 @@
       <bpmndi:BPMNEdge id="DataOutputAssociation_0e6mu6w_di" bpmnElement="DataOutputAssociation_0e6mu6w">
         <di:waypoint x="515" y="1287" />
         <di:waypoint x="515" y="1245" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_1u1kola_di" bpmnElement="DataOutputAssociation_1u1kola">
+        <di:waypoint x="2200" y="2050" />
+        <di:waypoint x="2200" y="2165" />
+        <di:waypoint x="1465" y="2165" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0uux3qm_di" bpmnElement="Flow_0uux3qm">
         <di:waypoint x="379" y="309" />
@@ -1704,11 +1710,6 @@
         <di:waypoint x="3120" y="590" />
         <di:waypoint x="2088" y="590" />
         <di:waypoint x="2088" y="379" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="DataOutputAssociation_1u1kola_di" bpmnElement="DataOutputAssociation_1u1kola">
-        <di:waypoint x="2200" y="2050" />
-        <di:waypoint x="2200" y="2165" />
-        <di:waypoint x="1465" y="2165" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
