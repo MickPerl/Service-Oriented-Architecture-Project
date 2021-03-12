@@ -2002,7 +2002,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_fhk2UXCdEeuLpvsj5GKIdQ"/>
     <element xmi:type="uml:Dependency" href="Progetto_ACMESky.uml#_fgyzMHCdEeuLpvsj5GKIdQ"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fhk2UnCdEeuLpvsj5GKIdQ" points="[900, 593, -643984, -643984]$[1060, 740, -643984, -643984]$[2300, 760, -643984, -643984]$[2300, 920, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fhk2UnCdEeuLpvsj5GKIdQ" points="[900, 593, -643984, -643984]$[1060, 740, -643984, -643984]$[2300, 740, -643984, -643984]$[2300, 920, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fjdssHCdEeuLpvsj5GKIdQ" id="(0.9950248756218906,0.9885057471264368)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fjdssXCdEeuLpvsj5GKIdQ" id="(0.7559523809523809,0.0)"/>
   </edges>
