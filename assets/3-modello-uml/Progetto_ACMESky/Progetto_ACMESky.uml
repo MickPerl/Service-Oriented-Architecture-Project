@@ -33,11 +33,13 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_W4FIsGfQEeuh7pG9Rv0v-w" name="riceviLinkBanca"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_TTjAEGfSEeuh7pG9Rv0v-w" name="notificaSuccessoPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_VezWsGfSEeuh7pG9Rv0v-w" name="notificaFallimentoPagamento"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_PZ7A4INiEeur2_P-r4r2Xw" name="segnaCodiceUsato"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_5fF7AGMlEeuKdZ2dYceV0w" name="ControlloCodiciEPagamentoInterno">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_5fF7AGMlEeuKdZ2dYceV0w" name="OperazioniCodici">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_5fF7AWMlEeuKdZ2dYceV0w" name="invioRichiestaGenerazioneLink"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_5fF7AmMlEeuKdZ2dYceV0w" name="invioPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_9qvcEGMlEeuKdZ2dYceV0w" name="controllaCodice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NMv-sINiEeur2_P-r4r2Xw" name="segnaCodiceUsato"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_GXcGcGMmEeuKdZ2dYceV0w" name="" client="_5fF7AGMlEeuKdZ2dYceV0w" supplier="_rFZ4oGMlEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Interface" xmi:id="_QYAMcGMmEeuKdZ2dYceV0w" name="InvioOfferte">
@@ -55,7 +57,6 @@ normali, che per quelle LM</body>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_itfWAGMmEeuKdZ2dYceV0w" name="cercaMatchOfferteInteressi"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_sHtNsGMmEeuKdZ2dYceV0w" name="generaCodici"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_9US0IGfJEeuh7pG9Rv0v-w" name="riceviOfferte"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_Fw-IsGo_EeukJL7Giwge6Q" name="segnaOffertaAcquistata"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_FxDBMGo_EeukJL7Giwge6Q" name="salvaOfferte"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_tmXkEGMmEeuKdZ2dYceV0w" name="" client="_QYAMcGMmEeuKdZ2dYceV0w" supplier="_XFD6UGMmEeuKdZ2dYceV0w"/>
@@ -87,7 +88,6 @@ normali, che per quelle LM</body>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_9BVXsGfQEeuh7pG9Rv0v-w" client="_3Uz5wGfQEeuh7pG9Rv0v-w" supplier="_rFZ4oGMlEeuKdZ2dYceV0w"/>
         <packagedElement xmi:type="uml:Interface" xmi:id="_4p5kwGo-EeukJL7Giwge6Q" name="InteressiOfferteInterno">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_8YsxwGo-EeukJL7Giwge6Q" name="salvaOfferte"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="__JJgIGo-EeukJL7Giwge6Q" name="segnaOffertaAcquistata"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_eyI6wGMmEeuKdZ2dYceV0w" name="cercaMatchOfferteInteressi"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_q0xmMGMmEeuKdZ2dYceV0w" name="generaCodici"/>
         </packagedElement>
