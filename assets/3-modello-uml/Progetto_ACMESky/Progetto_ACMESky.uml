@@ -5,10 +5,7 @@
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
     <packagedElement xmi:type="uml:Model" xmi:id="_oGUYsGMiEeuKdZ2dYceV0w" name="ACMESky">
-      <packagedElement xmi:type="uml:Package" xmi:id="_CB2GkGMjEeuKdZ2dYceV0w" name="ACMESkyUtilities">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_XDDV4GMrEeuKdZ2dYceV0w" name="SalvataggioInteressiInterno">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_aaWB0GMrEeuKdZ2dYceV0w" name="salvaInteressi" visibility="public"/>
-        </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_CB2GkGMjEeuKdZ2dYceV0w" name="MemorizzazioneInteressi">
         <packagedElement xmi:type="uml:Interface" xmi:id="_0FxeMGMrEeuKdZ2dYceV0w" name="InvioInteressi">
           <ownedOperation xmi:type="uml:Operation" xmi:id="__YER0GMrEeuKdZ2dYceV0w" name="inviaInteressi"/>
         </packagedElement>
@@ -16,14 +13,18 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_CNK2sGMsEeuKdZ2dYceV0w" name="riceviInteressi"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_LsaYUGMsEeuKdZ2dYceV0w" name="" client="_0FxeMGMrEeuKdZ2dYceV0w" supplier="_3w2o0GMrEeuKdZ2dYceV0w"/>
-        <packagedElement xmi:type="uml:Dependency" xmi:id="_QUTS0GWEEeuzveuuuhsydw" client="_XDDV4GMrEeuKdZ2dYceV0w" supplier="_b30RkIKJEeufPJLro6VmHA"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_b30RkIKJEeufPJLro6VmHA" name="MemorizzazioneInteressi">
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_b30RkYKJEeufPJLro6VmHA" name="ricezioneInteressi"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_b30RkoKJEeufPJLro6VmHA" name="salvaInteressi"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_NEfH4GWEEeuzveuuuhsydw" name="salvaInteressi"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Dependency" xmi:id="_oBbuwIKJEeufPJLro6VmHA" client="_3w2o0GMrEeuKdZ2dYceV0w" supplier="_XDDV4GMrEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_oBbuwIKJEeufPJLro6VmHA" client="_3w2o0GMrEeuKdZ2dYceV0w" supplier="_TTi6oINeEeu8sJTCcX6Xjg"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_u0hMIIKJEeufPJLro6VmHA" client="_3w2o0GMrEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TTi6oINeEeu8sJTCcX6Xjg" name="SalvataggioInteressiInterno">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TTi6oYNeEeu8sJTCcX6Xjg" name="inviaInteressi"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UDl3gINeEeu8sJTCcX6Xjg" name="memorizzaInteressi"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sOZOoINeEeu8sJTCcX6Xjg" name="MemorizzazioneInteressi">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_vlH54INeEeu8sJTCcX6Xjg" name="memorizzaInteressi"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_yxERcINeEeu8sJTCcX6Xjg" client="_TTi6oINeEeu8sJTCcX6Xjg" supplier="_sOZOoINeEeu8sJTCcX6Xjg">
+          <name xsi:nil="true"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_KxpvUGMjEeuKdZ2dYceV0w" name="ACMESkyTasks">
         <packagedElement xmi:type="uml:Class" xmi:id="_rFZ4oGMlEeuKdZ2dYceV0w" name="ControlloCodiceEPagamento">
@@ -99,7 +100,7 @@ normali, che per quelle LM</body>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_joonwHCcEeuLpvsj5GKIdQ" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_IGYoIGbiEeuChd7P_30mdA"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_fgyzMHCdEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_TgSxsGfJEeuh7pG9Rv0v-w"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_0scRkHCdEeuLpvsj5GKIdQ" client="_XFD6UGMmEeuKdZ2dYceV0w" supplier="_0FxeMGMrEeuKdZ2dYceV0w"/>
-        <packagedElement xmi:type="uml:Dependency" xmi:id="_R_SgkHCeEeuLpvsj5GKIdQ" client="_0scRkHCdEeuLpvsj5GKIdQ" supplier="_XDDV4GMrEeuKdZ2dYceV0w"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_R_SgkHCeEeuLpvsj5GKIdQ" client="_0scRkHCdEeuLpvsj5GKIdQ" supplier="_TTi6oINeEeu8sJTCcX6Xjg"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_ZVJrEIKKEeufPJLro6VmHA" client="_rFZ4oGMlEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
@@ -478,7 +479,6 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:Expose xmi:id="_6qhq0GV_Eeuzveuuuhsydw" base_Dependency="_fV-gQGMpEeuKdZ2dYceV0w"/>
   <TinySOA:Expose xmi:id="_8l81sGV_Eeuzveuuuhsydw" base_Dependency="_Y5uZEGMqEeuKdZ2dYceV0w"/>
   <TinySOA:Expose xmi:id="_-NxIEGV_Eeuzveuuuhsydw" base_Dependency="_Iv-1sGMnEeuKdZ2dYceV0w"/>
-  <TinySOA:Expose xmi:id="_RHgRYGWEEeuzveuuuhsydw" base_Dependency="_QUTS0GWEEeuzveuuuhsydw"/>
   <TinySOA:Utilities xmi:id="_4IR-QGWEEeuzveuuuhsydw" base_Package="_CB2GkGMjEeuKdZ2dYceV0w"/>
   <TinySOA:Tasks xmi:id="_BudY5GWGEeuzveuuuhsydw" base_Package="_BubjuWWGEeuzveuuuhsydw"/>
   <TinySOA:Expose xmi:id="_Bud_8GWGEeuzveuuuhsydw" base_Dependency="_BubjwGWGEeuzveuuuhsydw"/>
@@ -494,7 +494,6 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:Capability xmi:id="_gZjRMGfLEeuh7pG9Rv0v-w" base_Class="_fhlucGfLEeuh7pG9Rv0v-w"/>
   <TinySOA:Expose xmi:id="_yEAgwGfLEeuh7pG9Rv0v-w" base_Dependency="_vYJXcGfLEeuh7pG9Rv0v-w"/>
   <TinySOA:ServiceInterface xmi:id="_lc910GfNEeuh7pG9Rv0v-w" base_Interface="_0FxeMGMrEeuKdZ2dYceV0w"/>
-  <TinySOA:ServiceInterface xmi:id="_oDH_wGfNEeuh7pG9Rv0v-w" base_Interface="_XDDV4GMrEeuKdZ2dYceV0w"/>
   <TinySOA:ServiceInterface xmi:id="_o9nSEGfNEeuh7pG9Rv0v-w" base_Interface="_3NFmsGMmEeuKdZ2dYceV0w"/>
   <TinySOA:ServiceInterface xmi:id="_p_5OcGfNEeuh7pG9Rv0v-w" base_Interface="_QYAMcGMmEeuKdZ2dYceV0w"/>
   <TinySOA:ServiceInterface xmi:id="_r3lI0GfNEeuh7pG9Rv0v-w" base_Interface="_5fF7AGMlEeuKdZ2dYceV0w"/>
@@ -519,5 +518,7 @@ ad alcuna offerta generata da ACMESKY, non serve a catturare il caso in cui sian
   <TinySOA:ServiceInterface xmi:id="_yNtQIIJ2EeudM41gBU4zhQ" base_Interface="_yNLr0IJ2EeudM41gBU4zhQ"/>
   <TinySOA:Capability xmi:id="_yN75oIJ2EeudM41gBU4zhQ" base_Class="_yNLrzoJ2EeudM41gBU4zhQ"/>
   <TinySOA:Entities xmi:id="_yN8gsIJ2EeudM41gBU4zhQ" base_Package="_yNLrzYJ2EeudM41gBU4zhQ"/>
-  <TinySOA:Capability xmi:id="_fr61UIKJEeufPJLro6VmHA" base_Class="_b30RkIKJEeufPJLro6VmHA"/>
+  <TinySOA:ServiceInterface xmi:id="_WfIF0INeEeu8sJTCcX6Xjg" base_Interface="_TTi6oINeEeu8sJTCcX6Xjg"/>
+  <TinySOA:Capability xmi:id="_tVR-MINeEeu8sJTCcX6Xjg" base_Class="_sOZOoINeEeu8sJTCcX6Xjg"/>
+  <TinySOA:Expose xmi:id="_0j_noINeEeu8sJTCcX6Xjg" base_Dependency="_yxERcINeEeu8sJTCcX6Xjg"/>
 </xmi:XMI>
