@@ -137,7 +137,6 @@ normali, che per quelle LM</body>
           <name xsi:nil="true"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_3SOIYHCaEeuLpvsj5GKIdQ" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_RU-8IHCaEeuLpvsj5GKIdQ"/>
-        <packagedElement xmi:type="uml:Dependency" xmi:id="_vU2ckIKKEeufPJLro6VmHA" client="_XMtFUGMkEeuKdZ2dYceV0w" supplier="_LUp68GbiEeuChd7P_30mdA"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_1FJnQIKKEeufPJLro6VmHA" client="_Z6bH8HCaEeuLpvsj5GKIdQ" supplier="_LUp68GbiEeuChd7P_30mdA"/>
       </packagedElement>
     </packagedElement>
