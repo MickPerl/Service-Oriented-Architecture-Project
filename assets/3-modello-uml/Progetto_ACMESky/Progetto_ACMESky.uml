@@ -170,7 +170,7 @@ normali, che per quelle LM</body>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_5XyHMmMnEeuKdZ2dYceV0w" name="riceviPagamento"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_L2k9wGMoEeuKdZ2dYceV0w" name="calcolaDistanza"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_AtWmkGMoEeuKdZ2dYceV0w" name="CalcoloInterfaccia">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_AtWmkGMoEeuKdZ2dYceV0w" name="CalcoloDistanze">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_cAsb8GMoEeuKdZ2dYceV0w" name="calcolaDistanza"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_d7TugGMoEeuKdZ2dYceV0w" name="" client="_3NFmsGMmEeuKdZ2dYceV0w" supplier="_svONQGbiEeuChd7P_30mdA"/>
