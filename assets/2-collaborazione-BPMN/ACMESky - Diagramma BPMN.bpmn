@@ -338,7 +338,7 @@
       <bpmn:sequenceFlow id="Flow_0umt6m8" name="&#62;= 1000 euro" sourceRef="Gateway_0jl8th4" targetRef="Activity_0mu5dlh" />
       <bpmn:sequenceFlow id="Flow_17slvjl" sourceRef="Gateway_0owpn1b" targetRef="Activity_12quyy5" />
       <bpmn:sequenceFlow id="Flow_1ft54gx" sourceRef="Gateway_0jl8th4" targetRef="Event_0lj4var" />
-      <bpmn:sequenceFlow id="Flow_0afh1pa" name="casa utente - areoporto &#62; 30 km" sourceRef="Gateway_0owpn1b" targetRef="Event_0lj4var" />
+      <bpmn:sequenceFlow id="Flow_0afh1pa" name="casa utente - aeroporto &#62; 30 km" sourceRef="Gateway_0owpn1b" targetRef="Event_0lj4var" />
       <bpmn:sequenceFlow id="Flow_0pawg1j" sourceRef="Activity_0mu5dlh" targetRef="Event_0q1ohf6" />
       <bpmn:sequenceFlow id="Flow_1x594ot" sourceRef="Event_0q1ohf6" targetRef="Gateway_0owpn1b" />
       <bpmn:sequenceFlow id="Flow_1wlbid2" sourceRef="Activity_12quyy5" targetRef="Gateway_0pwhgis" />
@@ -984,9 +984,6 @@
           <dc:Bounds x="258" y="2370" width="32" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_03dea4v_di" bpmnElement="Activity_1mo9bbu">
-        <dc:Bounds x="1120" y="2380" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0pvekba_di" bpmnElement="Activity_06ktr8z" isExpanded="true">
         <dc:Bounds x="335" y="2257" width="570" height="273" />
       </bpmndi:BPMNShape>
@@ -1392,6 +1389,9 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1406" y="2192" width="69" height="14" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_03dea4v_di" bpmnElement="Activity_1mo9bbu">
+        <dc:Bounds x="1120" y="2380" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_07mzuk1_di" bpmnElement="TextAnnotation_07mzuk1">
         <dc:Bounds x="1050" y="2490" width="99.99274099883856" height="95.23809523809524" />
