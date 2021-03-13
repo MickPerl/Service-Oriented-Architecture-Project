@@ -1,0 +1,109 @@
+openapi: 3.0.0
+info:
+  title: compagnia_trasporto
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /prenota:
+    post:
+      summary: Create New User
+      operationId: post-user
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              type: object
+              properties:
+                luoghi:
+                  type: object
+                  properties:
+                    partenza:
+                      $ref: '#/components/schemas/luogo'
+                    arrivo:
+                      $ref: '#/components/schemas/luogo'
+                data:
+                  $ref: '#/components/schemas/data'
+                orario:
+                  $ref: '#/components/schemas/orario'
+            examples:
+              Esempio 1:
+                value: |-
+                  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:null="null.xsd">
+                     <soapenv:Header/>
+                     <soapenv:Body>
+                        <null:richiesta>
+                           <luoghi>
+                              <arrivo>
+                                 <cap>86042</cap>
+                                 <comune>Campomarino</comune>
+                                 <civico>1</civico>
+                                 <provincia>CB</provincia>
+                                 <via>Via Cuoro</via>
+                              </arrivo>
+                              <partenza>
+                                 <cap>86044</cap>
+                                 <comune>Termoli</comune>
+                                 <civico>4</civico>
+                                 <provincia>CB</provincia>
+                                 <via>Via Mascolo</via>
+                              </partenza>
+                           </luoghi>
+                           <data>
+                              <anno>2020</anno>
+                              <giorno>12</giorno>
+                              <mese>11</mese>
+                           </data>
+                           <ora>
+                              <hh>12</hh>
+                              <mm>30</mm>
+                           </ora>
+                        </null:richiesta>
+                     </soapenv:Body>
+                  </soapenv:Envelope>
+        description: Post the necessary fields for the API to create a new user.
+      description: Create a new user.
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: Content-Type
+          description: application/xml
+      responses:
+        '200':
+          description: OK
+    parameters: []
+components:
+  schemas:
+    luogo:
+      title: luogo
+      type: object
+      properties:
+        cap:
+          type: integer
+        comune:
+          type: string
+        civico:
+          type: integer
+        provincia:
+          type: string
+        via:
+          type: string
+    data:
+      title: data
+      type: object
+      properties:
+        anno:
+          type: integer
+        mese:
+          type: integer
+        giorno:
+          type: integer
+    orario:
+      title: ora
+      type: object
+      properties:
+        ora:
+          type: integer
+        minuti:
+          type: integer
